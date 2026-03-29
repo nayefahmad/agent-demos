@@ -75,6 +75,54 @@ Key MCP concepts:
 - **Prompts**: Reusable prompt templates the server exposes
 - **Transports**: stdio (local) or SSE/Streamable HTTP (remote)
 
+## Multi-Agent Orchestration Patterns
+
+Real-world agent systems combine multiple agents. Here are the main patterns:
+
+```
+Supervisor (~70% of production)     Pipeline (Sequential)
+        [Supervisor]                [A] → [B] → [C] → Output
+       /     |      \
+  [Agent A] [Agent B] [Agent C]
+
+Swarm (Decentralized)               Hierarchical (Large-scale)
+  [A] ←→ [B]                              [Executive]
+   ↕       ↕                              /         \
+  [C] ←→ [D]                        [Manager A]  [Manager B]
+                                     /    \        /    \
+                                   [W1]  [W2]   [W3]  [W4]
+```
+
+| Pattern | When to Use | Example |
+|---------|-------------|---------|
+| **Supervisor** | Most tasks — one coordinator delegates to specialists | Example 7 |
+| **Pipeline** | Clear sequential stages (research → code → review) | Example 7 |
+| **Handoffs** | Routing to the right specialist (triage → billing) | Example 6 |
+| **Swarm** | Resilient peer-to-peer collaboration | Advanced |
+| **Hierarchical** | 50+ agent enterprise systems | Advanced |
+
+## Memory Patterns
+
+| Type | Scope | Implementation |
+|------|-------|----------------|
+| **Short-term** | Current conversation | Message history (Example 1) |
+| **Working** | Current task | Agent scratchpad/notepad (Example 3) |
+| **Long-term semantic** | Persistent knowledge | Vector DB + RAG |
+| **Long-term episodic** | Past interactions | Stored conversation summaries |
+
+## Framework Comparison
+
+| Framework | Best For | Language |
+|-----------|----------|----------|
+| **Anthropic API** (raw) | Full control, learning fundamentals | Python/TS |
+| **Claude Agent SDK** | Code agents with built-in tools | Python |
+| **OpenAI Agents SDK** | Clean handoffs + guardrails | Python |
+| **LangGraph** | Complex stateful workflows, graph control | Python |
+| **CrewAI** | Role-based team prototyping | Python |
+| **Google ADK** | Gemini ecosystem | Python |
+| **Pydantic AI** | Type-safe agents | Python |
+| **Mastra** | TypeScript-first web apps | TypeScript |
+
 ## Setup
 
 ```bash
