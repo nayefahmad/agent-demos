@@ -1,0 +1,9 @@
+{
+  "_comment": "Add this to your Claude Desktop config to use the MCP server. On macOS: ~/Library/Application Support/Claude/claude_desktop_config.json",
+  "mcpServers": {
+    "todo-manager": {
+      "command": "python",
+      "args": ["/absolute/path/to/04-mcp-server/server.py"]
+    }
+  }
+}

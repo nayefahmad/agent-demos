@@ -1,0 +1,10 @@
+# Core SDKs
+anthropic>=0.52.0          # Anthropic API client (Examples 1-4, 7)
+openai-agents>=0.1.0       # OpenAI Agents SDK (Example 6)
+
+# MCP (Model Context Protocol)
+mcp>=1.0.0                 # MCP server + client (Example 4)
+
+# LangChain / LangGraph
+langchain-anthropic>=0.3.0 # LangChain Anthropic integration (Example 5)
+langgraph>=0.3.0           # LangGraph agent framework (Example 5)
