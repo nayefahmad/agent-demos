@@ -15,6 +15,7 @@ incrementally.
 | 5 | [LangGraph Agent](05-langgraph-agent/) | Graph-based agents, state machines, conditional routing |
 | 6 | [OpenAI Agents SDK](06-openai-agents-sdk/) | Agent handoffs, guardrails, tracing |
 | 7 | [Multi-Agent Orchestration](07-multi-agent/) | Claude Agent SDK, agent delegation, parallel execution |
+| 8 | [Tracing & Evaluation](08-tracing/) | Runs/Traces/Threads, trace-powered evals, observability |
 
 ## Architecture Overview
 
