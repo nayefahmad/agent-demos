@@ -16,6 +16,7 @@ incrementally.
 | 6 | [OpenAI Agents SDK](06-openai-agents-sdk/) | Agent handoffs, guardrails, tracing |
 | 7 | [Multi-Agent Orchestration](07-multi-agent/) | Claude Agent SDK, agent delegation, parallel execution |
 | 8 | [Tracing & Evaluation](08-tracing/) | Runs/Traces/Threads, trace-powered evals, observability |
+| 9 | [LlamaIndex Agents](09-llamaindex-agents/) | FunctionTool, AgentWorkflow, Workflows, MCP integration |
 
 ## Architecture Overview
 

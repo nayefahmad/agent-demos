@@ -8,3 +8,8 @@ mcp>=1.0.0                 # MCP server + client (Example 4)
 # LangChain / LangGraph
 langchain-anthropic>=0.3.0 # LangChain Anthropic integration (Example 5)
 langgraph>=0.3.0           # LangGraph agent framework (Example 5)
+
+# LlamaIndex
+llama-index-core>=0.14.0   # Core library + Workflows (Example 9)
+llama-index-llms-openai>=0.4.0  # OpenAI LLM integration (Example 9)
+llama-index-tools-mcp>=0.4.0    # MCP tool integration (Example 9e)
